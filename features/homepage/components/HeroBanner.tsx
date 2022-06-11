@@ -5,7 +5,8 @@ import { Button, Space } from 'antd';
 const StyledHeroBanner = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: url('/img/banner.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/banner-2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +23,7 @@ const StyledHeroBanner = styled.div`
 const StyledTextBanner = styled.div`
   text-transform: uppercase;
   text-align: center;
-  border: 10px solid #fff;
+  border: 10px solid #e8e6e6;
   padding: 50px;
 
   h1 {
@@ -32,7 +33,7 @@ const StyledTextBanner = styled.div`
 
   h1,
   h3 {
-    color: #fff;
+    color: #e8e6e6;
     font-weight: bold;
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
       0px -4px 10px rgba(255, 255, 255, 0.3);
