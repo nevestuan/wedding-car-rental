@@ -25,6 +25,7 @@ const StyledInfoSection = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 32px 0;
 
     .title {
       font-size: 46px;
@@ -41,7 +42,7 @@ const StyledInfoSection = styled.div`
   }
 
   .image {
-    border: 10px solid #e8e6e6;
+    border: 16px solid #e8e6e6;
     flex: 1 1 auto;
     width: 100%;
     height: 100%;
@@ -52,10 +53,16 @@ const StyledInfoSection = styled.div`
   }
 
   @media only screen and (max-width: 360px) {
+    height: auto;
     flex-direction: column;
     .description {
       width: 100%;
-      height: 50%;
+      height: auto;
+    }
+
+    .image {
+      flex: 1 0 auto;
+      height: 200px;
     }
   }
 `;
